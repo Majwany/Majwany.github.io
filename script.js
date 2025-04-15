@@ -5,3 +5,4 @@ document.querySelectorAll('nav a').forEach(anchor => {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 });
+// Updated on April 14, 2025
