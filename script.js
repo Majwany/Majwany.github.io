@@ -6,3 +6,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 // Updated on April 14, 2025
+document.querySelectorAll('.project').forEach(project => {
+  project.addEventListener('click', () => {
+    alert('Project clicked: ' + project.querySelector('h3').textContent);
+  });
+});
