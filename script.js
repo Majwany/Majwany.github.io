@@ -11,3 +11,17 @@ document.querySelectorAll('.project').forEach(project => {
     alert('Project clicked: ' + project.querySelector('h3').textContent);
   });
 });
+// Show/hide the button when scrolling
+window.onscroll = function () {
+  const button = document.getElementById('back-to-top');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+};
+
+// Scroll to top when the button is clicked
+document.getElementById('back-to-top').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
